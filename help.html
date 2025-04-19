@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>名字竞技场 - 帮助文档</title>
+  <link rel="stylesheet" href="./styles.css"> <!-- 链接到现有的样式表 -->
+  <!-- 稍后可以在 styles.css 中添加 help 页面的特定样式 -->
+</head>
+<body>
+  <div class="container help-container"> <!-- 添加 help-container 类以便添加特定样式 -->
+    <h1>帮助文档</h1>
+
+    <section id="elements">
+      <h2>元素属性</h2>
+      <p>每个角色根据名字会获得一种元素属性，影响其基础属性和可能的技能倾向。</p>
+      <ul id="element-list">
+        <li><strong>火:</strong> 倾向于高攻击或爆发伤害。</li>
+        <li><strong>水:</strong> 倾向于控制或治疗，属性较均衡。</li>
+        <li><strong>风:</strong> 倾向于高速度或闪避。</li>
+        <li><strong>地:</strong> 倾向于高生命或防御。</li>
+        <li><strong>光:</strong> 倾向于治疗或增益，克制暗属性。</li>
+        <li><strong>暗:</strong> 倾向于减益或特殊效果，克制光属性。</li>
+      </ul>
+    </section>
+
+    <section id="personalities">
+      <h2>性格说明</h2>
+      <p>性格决定了角色在战斗中的行为倾向和技能选择偏好。</p>
+      <ul id="personality-list">
+        <li><strong>勇敢:</strong> 更倾向于使用攻击技能。</li>
+        <li><strong>谨慎:</strong> 血量较低时更倾向于使用防御或治疗技能。</li>
+        <li><strong>鲁莽:</strong> 更倾向于使用高风险高回报的技能。</li>
+        <li><strong>聪明:</strong> 更倾向于根据对手状态选择克制技能。</li>
+        <li><strong>固执:</strong> 可能重复使用同一个技能。</li>
+        <li><strong>温和:</strong> 倾向于使用增益或治疗技能。</li>
+        <li><strong>暴躁:</strong> 攻击性更强，可能优先攻击血量低的目标。</li>
+        <li><strong>冷静:</strong> 行为模式更稳定，不易受血量影响。</li>
+        <li><strong>狡猾:</strong> 倾向于使用减益或控制技能。</li>
+        <li><strong>正直:</strong> 行为模式较为标准，攻守兼备。</li>
+      </ul>
+      <p><em>注意：性格的具体影响可能在代码中有更细致的实现。</em></p>
+    </section>
+
+    <section id="skills">
+      <h2>技能列表</h2>
+      <p>游戏中包含多种技能，以下是详细说明：</p>
+      <div id="skill-list">
+           <div class="skill-item">
+             <h3>烈焰斩击</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 2 回合 | <strong>元素:</strong> 火 | <strong>适合职业:</strong> 战士, 圣骑士</p>
+             <p><em>描述:</em> 带有火焰属性的强力斩击，有几率造成灼烧效果。</p>
+           </div>
+           <div class="skill-item">
+             <h3>寒冰箭</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 1 回合 | <strong>元素:</strong> 水 | <strong>适合职业:</strong> 法师, 射手</p>
+             <p><em>描述:</em> 发射一支冰冻之箭，有几率造成减速效果。</p>
+           </div>
+           <div class="skill-item">
+             <h3>暗影突袭</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 3 回合 | <strong>元素:</strong> 暗 | <strong>适合职业:</strong> 刺客, 死灵法师</p>
+             <p><em>描述:</em> 从暗影中突袭，造成高额伤害，对有减益效果的目标伤害更高。</p>
+           </div>
+           <div class="skill-item">
+             <h3>雷霆一击</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 4 回合 | <strong>元素:</strong> 风 | <strong>适合职业:</strong> 战士, 武僧</p>
+             <p><em>描述:</em> 蓄力后释放强大的雷电攻击，暴击率提高，有几率造成麻痹效果。</p>
+           </div>
+           <div class="skill-item">
+             <h3>大地震击 (AOE)</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 3 回合 | <strong>元素:</strong> 地 | <strong>适合职业:</strong> 坦克, 战士</p>
+             <p><em>描述:</em> 引发地震攻击所有敌人。</p>
+           </div>
+           <div class="skill-item">
+             <h3>神圣审判</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 3 回合 | <strong>元素:</strong> 光 | <strong>适合职业:</strong> 圣骑士, 辅助</p>
+             <p><em>描述:</em> 召唤神圣之光审判敌人，对暗属性目标伤害提高，并恢复自身少量生命。</p>
+           </div>
+           <div class="skill-item">
+             <h3>毒液喷射</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 2 回合 | <strong>元素:</strong> 暗 | <strong>适合职业:</strong> 刺客, 死灵法师</p>
+             <p><em>描述:</em> 喷射毒液，造成伤害并施加中毒效果。</p>
+           </div>
+           <div class="skill-item">
+             <h3>连续打击</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 2 回合 | <strong>适合职业:</strong> 武僧, 刺客</p>
+             <p><em>描述:</em> 快速连续攻击敌人3-5次。</p>
+           </div>
+           <div class="skill-item">
+             <h3>精准射击</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 2 回合 | <strong>适合职业:</strong> 射手</p>
+             <p><em>描述:</em> 瞄准弱点进行精准射击，无视部分防御且暴击率高。</p>
+           </div>
+           <div class="skill-item">
+             <h3>元素爆发 (AOE)</h3>
+             <p><strong>类型:</strong> 攻击 | <strong>冷却:</strong> 4 回合 | <strong>适合职业:</strong> 法师, 德鲁伊</p>
+             <p><em>描述:</em> 引发强大的与自身元素属性相同的元素爆发，攻击所有敌人，对克制属性伤害提高。</p>
+           </div>
+           <div class="skill-item">
+             <h3>治愈之光</h3>
+             <p><strong>类型:</strong> 治疗 | <strong>冷却:</strong> 3 回合 | <strong>元素:</strong> 光 | <strong>适合职业:</strong> 辅助, 圣骑士</p>
+             <p><em>描述:</em> 释放治愈之光恢复目标生命，对低血量目标效果更好，有几率清除减益效果。</p>
+           </div>
+           <div class="skill-item">
+             <h3>生命汲取</h3>
+             <p><strong>类型:</strong> 攻击/治疗 | <strong>冷却:</strong> 2 回合 | <strong>元素:</strong> 暗 | <strong>适合职业:</strong> 死灵法师, 法师</p>
+             <p><em>描述:</em> 攻击敌人并吸取部分伤害值恢复自身生命。</p>
+           </div>
+           <div class="skill-item">
+             <h3>自然之愈</h3>
+             <p><strong>类型:</strong> 治疗 | <strong>冷却:</strong> 3 回合 | <strong>元素:</strong> 地, 水 | <strong>适合职业:</strong> 德鲁伊, 辅助</p>
+             <p><em>描述:</em> 治疗目标并施加持续恢复效果。</p>
+           </div>
+           <div class="skill-item">
+             <h3>群体治疗 (AOE)</h3>
+             <p><strong>类型:</strong> 治疗 | <strong>冷却:</strong> 4 回合 | <strong>适合职业:</strong> 辅助, 德鲁伊</p>
+             <p><em>描述:</em> 治疗所有友方角色。</p>
+           </div>
+           <div class="skill-item">
+             <h3>铁壁防御</h3>
+             <p><strong>类型:</strong> 增益 | <strong>冷却:</strong> 3 回合 | <strong>适合职业:</strong> 坦克, 战士</p>
+             <p><em>描述:</em> 大幅提升自身防御力，持续2回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>急速冲锋</h3>
+             <p><strong>类型:</strong> 增益 | <strong>冷却:</strong> 3 回合 | <strong>适合职业:</strong> 刺客, 武僧</p>
+             <p><em>描述:</em> 大幅提升自身速度，持续2回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>力量祝福</h3>
+             <p><strong>类型:</strong> 增益 | <strong>冷却:</strong> 3 回合 | <strong>适合职业:</strong> 战士, 圣骑士</p>
+             <p><em>描述:</em> 提升自身攻击力，持续3回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>智慧启迪</h3>
+             <p><strong>类型:</strong> 增益 | <strong>冷却:</strong> 3 回合 | <strong>适合职业:</strong> 法师, 辅助</p>
+             <p><em>描述:</em> 提升自身智力，持续3回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>幸运加护</h3>
+             <p><strong>类型:</strong> 增益 | <strong>冷却:</strong> 4 回合 | <strong>适合职业:</strong> 辅助, 射手</p>
+             <p><em>描述:</em> 提升自身幸运值，持续3回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>群体加速 (AOE)</h3>
+             <p><strong>类型:</strong> 增益 | <strong>冷却:</strong> 5 回合 | <strong>适合职业:</strong> 辅助, 法师</p>
+             <p><em>描述:</em> 提升所有友方角色的速度，持续2回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>破甲攻击</h3>
+             <p><strong>类型:</strong> 攻击/减益 | <strong>冷却:</strong> 2 回合 | <strong>适合职业:</strong> 战士, 刺客</p>
+             <p><em>描述:</em> 攻击敌人并降低其防御力，持续2回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>虚弱诅咒</h3>
+             <p><strong>类型:</strong> 减益 | <strong>冷却:</strong> 3 回合 | <strong>元素:</strong> 暗 | <strong>适合职业:</strong> 死灵法师, 法师</p>
+             <p><em>描述:</em> 降低目标攻击力，持续3回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>迟缓术</h3>
+             <p><strong>类型:</strong> 减益 | <strong>冷却:</strong> 3 回合 | <strong>元素:</strong> 水, 地 | <strong>适合职业:</strong> 法师, 坦克</p>
+             <p><em>描述:</em> 降低目标速度，持续3回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>沉默术</h3>
+             <p><strong>类型:</strong> 减益 | <strong>冷却:</strong> 4 回合 | <strong>适合职业:</strong> 法师, 辅助</p>
+             <p><em>描述:</em> 使目标暂时无法使用技能（只能普通攻击），持续1回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>群体减防 (AOE)</h3>
+             <p><strong>类型:</strong> 减益 | <strong>冷却:</strong> 5 回合 | <strong>适合职业:</strong> 战士, 死灵法师</p>
+             <p><em>描述:</em> 降低所有敌人的防御力，持续2回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>嘲讽</h3>
+             <p><strong>类型:</strong> 特殊/减益 | <strong>冷却:</strong> 3 回合 | <strong>适合职业:</strong> 坦克, 圣骑士</p>
+             <p><em>描述:</em> 强制目标下回合攻击自己，并提升自身少量防御。</p>
+           </div>
+           <div class="skill-item">
+             <h3>潜行</h3>
+             <p><strong>类型:</strong> 特殊/增益 | <strong>冷却:</strong> 4 回合 | <strong>适合职业:</strong> 刺客, 射手</p>
+             <p><em>描述:</em> 进入潜行状态，下回合无法被单体技能选为目标，且下一次攻击伤害提高。</p>
+           </div>
+           <div class="skill-item">
+             <h3>能量护盾</h3>
+             <p><strong>类型:</strong> 特殊/增益 | <strong>冷却:</strong> 4 回合 | <strong>适合职业:</strong> 法师, 坦克</p>
+             <p><em>描述:</em> 获得一个可以吸收一定伤害的护盾，持续2回合或直到护盾被打破。</p>
+           </div>
+           <div class="skill-item">
+             <h3>牺牲</h3>
+             <p><strong>类型:</strong> 特殊/治疗 | <strong>冷却:</strong> 5 回合 | <strong>适合职业:</strong> 圣骑士, 辅助</p>
+             <p><em>描述:</em> 消耗自身少量生命值，为血量最低的队友恢复大量生命值。</p>
+           </div>
+           <div class="skill-item">
+             <h3>亡者复生</h3>
+             <p><strong>类型:</strong> 特殊 | <strong>冷却:</strong> 6 回合 | <strong>适合职业:</strong> 死灵法师</p>
+             <p><em>描述:</em> 有一定几率复活一个已阵亡的队友，复活后生命值较低。</p>
+           </div>
+           <div class="skill-item">
+             <h3>自然变形</h3>
+             <p><strong>类型:</strong> 特殊/增益 | <strong>冷却:</strong> 5 回合 | <strong>适合职业:</strong> 德鲁伊</p>
+             <p><em>描述:</em> 随机变形为一种动物形态（熊、豹、鹰），获得不同的属性加成，持续2回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>冥想</h3>
+             <p><strong>类型:</strong> 特殊/增益 | <strong>冷却:</strong> 3 回合 | <strong>适合职业:</strong> 武僧, 法师</p>
+             <p><em>描述:</em> 跳过本回合行动，恢复少量生命值并减少所有技能1回合冷却时间。</p>
+           </div>
+           <div class="skill-item">
+             <h3>反击姿态</h3>
+             <p><strong>类型:</strong> 特殊/增益 | <strong>冷却:</strong> 4 回合 | <strong>适合职业:</strong> 战士, 武僧</p>
+             <p><em>描述:</em> 进入反击姿态，本回合受到攻击时会对攻击者进行一次反击。</p>
+           </div>
+           <div class="skill-item">
+             <h3>圣光屏障 (AOE)</h3>
+             <p><strong>类型:</strong> 特殊/增益 | <strong>冷却:</strong> 5 回合 | <strong>元素:</strong> 光 | <strong>适合职业:</strong> 圣骑士, 辅助</p>
+             <p><em>描述:</em> 为所有队友施加一个少量吸收伤害的屏障。</p>
+           </div>
+           <div class="skill-item">
+             <h3>暗影契约</h3>
+             <p><strong>类型:</strong> 特殊/增益 | <strong>冷却:</strong> 5 回合 | <strong>元素:</strong> 暗 | <strong>适合职业:</strong> 死灵法师</p>
+             <p><em>描述:</em> 消耗自身大量生命值，大幅提升自身所有属性，持续2回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>疾风步</h3>
+             <p><strong>类型:</strong> 特殊/增益 | <strong>冷却:</strong> 4 回合 | <strong>元素:</strong> 风 | <strong>适合职业:</strong> 刺客, 射手</p>
+             <p><em>描述:</em> 提升自身闪避率，持续2回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>石肤术</h3>
+             <p><strong>类型:</strong> 特殊/增益 | <strong>冷却:</strong> 4 回合 | <strong>元素:</strong> 地 | <strong>适合职业:</strong> 坦克, 德鲁伊</p>
+             <p><em>描述:</em> 提升自身伤害减免，持续2回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>火焰光环 (AOE)</h3>
+             <p><strong>类型:</strong> 特殊/减益 | <strong>冷却:</strong> 5 回合 | <strong>元素:</strong> 火 | <strong>适合职业:</strong> 法师, 战士</p>
+             <p><em>描述:</em> 开启火焰光环，每回合对所有敌人造成少量火焰伤害，持续3回合。</p>
+           </div>
+           <div class="skill-item">
+             <h3>冰霜领域 (AOE)</h3>
+             <p><strong>类型:</strong> 特殊/减益 | <strong>冷却:</strong> 5 回合 | <strong>元素:</strong> 水 | <strong>适合职业:</strong> 法师, 德鲁伊</p>
+             <p><em>描述:</em> 创造冰霜领域，降低所有敌人的速度，持续3回合。</p>
+           </div>
+           <!-- 更多技能... -->
+         </div>
+    </section>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="./index.html">返回游戏</a>
+    </div>
+
+  </div>
+  <!-- 如果需要特定的 JS 功能，可以在这里添加 -->
+</body>
+</html>

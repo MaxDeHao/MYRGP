@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>名字竞技场</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>名字竞技场</h1>
+    <div style="text-align: center; margin-bottom: 15px;">
+      <a href="./help.html" target="_blank">查看帮助文档 (角色/技能说明)</a>
+    </div>
+    <div class="input-area">
+      <p class="description">在下方输入几个名字，点击开始即可进入战斗！</p>
+      <p class="sub-description">每次输入相同的名字都会得到相同结果，即使改变名字的顺序结果也不会变。</p>
+      <textarea id="names-input" placeholder="请输入名字，每行一个名字"></textarea>
+      <button id="start-battle">开始战斗</button>
+      <div class="speed-control">
+        <label for="battle-speed">战斗速度 (ms/行动): </label>
+        <input type="number" id="battle-speed" value="100" min="0" max="2000" step="50">
+      </div>
+    </div>
+    <div id="health-bars" class="health-bars-container"></div>
+    <div class="battle-area" id="battle-area">
+      <div class="battle-log" id="battle-log"></div>
+      <div class="battle-result" id="battle-result"></div>
+    </div>
+  </div>
+  <script src="./scripts/utils.js"></script>
+  <script src="./scripts/character.js"></script>
+  <script src="./scripts/skills.js"></script>
+  <script src="./scripts/battle.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
